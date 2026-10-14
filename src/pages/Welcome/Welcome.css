@@ -1,0 +1,815 @@
+/* =========================================================
+   VORA AI - WELCOME PAGE
+   Bootstrap handles basic responsive structure.
+   This CSS handles the VORA AI visual design.
+========================================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #020617;
+}
+
+
+/* =========================================================
+   MAIN PAGE
+========================================================= */
+
+.welcome-page {
+  min-height: 100vh;
+  width: 100%;
+
+  position: relative;
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 50% 45%,
+      rgba(0, 191, 255, 0.13),
+      transparent 27%
+    ),
+    radial-gradient(
+      circle at 10% 20%,
+      rgba(37, 99, 235, 0.10),
+      transparent 25%
+    ),
+    radial-gradient(
+      circle at 90% 75%,
+      rgba(6, 182, 212, 0.08),
+      transparent 28%
+    ),
+    #020617;
+
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.welcome-navbar {
+  width: 100%;
+  height: 78px;
+
+  padding: 0 5%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: relative;
+  z-index: 20;
+
+  border-bottom: 1px solid rgba(148, 163, 184, 0.08);
+
+  background: rgba(2, 6, 23, 0.35);
+
+  backdrop-filter: blur(12px);
+}
+
+
+/* =========================================================
+   VORA LOGO
+========================================================= */
+
+.vora-logo {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  color: #ffffff;
+
+  font-size: 20px;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+.logo-box {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 11px;
+
+  background: linear-gradient(
+    135deg,
+    #06b6d4,
+    #2563eb
+  );
+
+  color: #ffffff;
+
+  font-size: 20px;
+  font-weight: 900;
+
+  box-shadow:
+    0 0 25px rgba(6, 182, 212, 0.35);
+}
+
+
+/* =========================================================
+   NAVIGATION BUTTONS
+========================================================= */
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+}
+
+.signin-btn {
+  border: none;
+
+  background: transparent;
+
+  color: #94a3b8;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+.signin-btn:hover {
+  color: #ffffff;
+}
+
+
+.signup-btn {
+  padding: 10px 19px;
+
+  border: 1px solid rgba(56, 189, 248, 0.30);
+
+  border-radius: 9px;
+
+  background: rgba(14, 165, 233, 0.08);
+
+  color: #7dd3fc;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+.signup-btn:hover {
+  background: rgba(14, 165, 233, 0.18);
+
+  border-color: #38bdf8;
+
+  color: #ffffff;
+
+  transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   HERO SECTION
+========================================================= */
+
+.hero {
+  min-height: calc(100vh - 78px);
+
+  width: 100%;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* =========================================================
+   CENTER HERO CONTENT
+========================================================= */
+
+.hero-content {
+  width: min(700px, 90%);
+
+  text-align: center;
+
+  position: relative;
+  z-index: 10;
+
+  margin-top: -20px;
+}
+
+
+/* =========================================================
+   AI LABEL
+========================================================= */
+
+.ai-label {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 8px 15px;
+
+  margin-bottom: 24px;
+
+  border: 1px solid rgba(56, 189, 248, 0.20);
+
+  border-radius: 50px;
+
+  background: rgba(14, 165, 233, 0.06);
+
+  color: #67e8f9;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  box-shadow:
+    0 0 25px rgba(6, 182, 212, 0.05);
+}
+
+
+/* GREEN STATUS DOT */
+
+.green-dot {
+  width: 7px;
+  height: 7px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #22c55e;
+
+  box-shadow:
+    0 0 10px rgba(34, 197, 94, 0.9);
+}
+
+
+/* =========================================================
+   MAIN HEADING
+========================================================= */
+
+.hero-content h1 {
+  margin: 0;
+
+  color: #f8fafc;
+
+  font-size: clamp(48px, 7vw, 82px);
+
+  font-weight: 800;
+
+  line-height: 0.98;
+
+  letter-spacing: -4px;
+}
+
+.hero-content h1 span {
+  display: inline-block;
+
+  background: linear-gradient(
+    90deg,
+    #38bdf8,
+    #22d3ee,
+    #67e8f9
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  background-clip: text;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.hero-content p {
+  max-width: 600px;
+
+  margin: 26px auto 0;
+
+  color: #94a3b8;
+
+  font-size: 15px;
+
+  line-height: 1.75;
+}
+
+
+/* =========================================================
+   HERO BUTTONS
+========================================================= */
+
+.hero-buttons {
+  margin-top: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+}
+
+
+/* PRIMARY BUTTON */
+
+.primary-button {
+  padding: 14px 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 16px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: linear-gradient(
+    135deg,
+    #06b6d4,
+    #2563eb
+  );
+
+  color: #ffffff;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 10px 30px rgba(6, 182, 212, 0.20);
+
+  transition: all 0.25s ease;
+}
+
+.primary-button:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 15px 40px rgba(6, 182, 212, 0.35);
+}
+
+.primary-button span {
+  font-size: 19px;
+
+  transition: transform 0.25s ease;
+}
+
+.primary-button:hover span {
+  transform: translateX(4px);
+}
+
+
+/* SECONDARY BUTTON */
+
+.secondary-button {
+  padding: 13px 23px;
+
+  border: 1px solid rgba(148, 163, 184, 0.20);
+
+  border-radius: 10px;
+
+  background: rgba(15, 23, 42, 0.50);
+
+  color: #cbd5e1;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+.secondary-button:hover {
+  border-color: rgba(56, 189, 248, 0.45);
+
+  background: rgba(14, 165, 233, 0.08);
+
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   THREE STEPS
+========================================================= */
+
+.steps {
+  margin-top: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 18px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+}
+
+.step b {
+  color: #38bdf8;
+
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.step span {
+  color: #64748b;
+
+  font-size: 10px;
+}
+
+.line {
+  width: 30px;
+  height: 1px;
+
+  background: rgba(148, 163, 184, 0.15);
+}
+
+
+/* =========================================================
+   FEATURE BUBBLES
+========================================================= */
+
+.feature-bubble {
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 13px 17px;
+
+  border: 1px solid rgba(56, 189, 248, 0.13);
+
+  border-radius: 16px;
+
+  background: rgba(15, 23, 42, 0.70);
+
+  backdrop-filter: blur(15px);
+
+  box-shadow:
+    0 15px 40px rgba(0, 0, 0, 0.30);
+
+  z-index: 5;
+
+  animation: floatingBubble 5s ease-in-out infinite;
+}
+
+
+/* ICON */
+
+.feature-bubble > span {
+  width: 36px;
+  height: 36px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background: rgba(14, 165, 233, 0.10);
+
+  font-size: 16px;
+}
+
+
+/* TEXT */
+
+.feature-bubble strong {
+  display: block;
+
+  color: #e2e8f0;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.feature-bubble small {
+  display: block;
+
+  margin-top: 4px;
+
+  color: #64748b;
+
+  font-size: 9px;
+}
+
+
+/* =========================================================
+   BUBBLE POSITIONS
+========================================================= */
+
+.bubble-left-top {
+  left: 7%;
+
+  top: 24%;
+}
+
+.bubble-right-top {
+  right: 7%;
+
+  top: 22%;
+
+  animation-delay: 1s;
+}
+
+.bubble-left-bottom {
+  left: 9%;
+
+  bottom: 20%;
+
+  animation-delay: 2s;
+}
+
+.bubble-right-bottom {
+  right: 9%;
+
+  bottom: 18%;
+
+  animation-delay: 3s;
+}
+
+
+/* =========================================================
+   BACKGROUND CIRCLES
+========================================================= */
+
+.bg-circle {
+  position: absolute;
+
+  border-radius: 50%;
+
+  pointer-events: none;
+
+  border: 1px solid rgba(56, 189, 248, 0.07);
+
+  background: rgba(14, 165, 233, 0.02);
+}
+
+
+/* BIG LEFT CIRCLE */
+
+.circle-one {
+  width: 230px;
+  height: 230px;
+
+  left: -120px;
+  top: 20%;
+}
+
+
+/* SMALL TOP CIRCLE */
+
+.circle-two {
+  width: 120px;
+  height: 120px;
+
+  left: 21%;
+  top: 12%;
+}
+
+
+/* BIG RIGHT CIRCLE */
+
+.circle-three {
+  width: 300px;
+  height: 300px;
+
+  right: -150px;
+  top: 28%;
+}
+
+
+/* BOTTOM CIRCLE */
+
+.circle-four {
+  width: 100px;
+  height: 100px;
+
+  right: 23%;
+  bottom: 8%;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer {
+  position: absolute;
+
+  left: 5%;
+  right: 5%;
+
+  bottom: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  color: #334155;
+
+  font-size: 10px;
+
+  z-index: 10;
+}
+
+
+/* =========================================================
+   FLOATING ANIMATION
+========================================================= */
+
+@keyframes floatingBubble {
+
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+  .welcome-navbar {
+    padding: 0 30px;
+  }
+
+  .feature-bubble {
+    transform: scale(0.85);
+  }
+
+  .bubble-left-top {
+    left: 2%;
+  }
+
+  .bubble-right-top {
+    right: 2%;
+  }
+
+  .bubble-left-bottom {
+    left: 2%;
+  }
+
+  .bubble-right-bottom {
+    right: 2%;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .welcome-navbar {
+    height: 70px;
+
+    padding: 0 20px;
+  }
+
+
+  .vora-logo {
+    font-size: 17px;
+  }
+
+
+  .logo-box {
+    width: 35px;
+    height: 35px;
+
+    font-size: 17px;
+  }
+
+
+  .signin-btn {
+    display: none;
+  }
+
+
+  .signup-btn {
+    padding: 9px 14px;
+  }
+
+
+  .hero {
+    min-height: calc(100vh - 70px);
+  }
+
+
+  .hero-content {
+    width: 90%;
+
+    margin-top: -10px;
+  }
+
+
+  .ai-label {
+    font-size: 8px;
+
+    letter-spacing: 1.5px;
+
+    padding: 7px 11px;
+  }
+
+
+  .hero-content h1 {
+    font-size: 48px;
+
+    letter-spacing: -2.5px;
+  }
+
+
+  .hero-content p {
+    font-size: 13px;
+
+    line-height: 1.65;
+  }
+
+
+  .hero-buttons {
+    flex-direction: column;
+
+    width: 100%;
+  }
+
+
+  .primary-button,
+  .secondary-button {
+    width: 100%;
+  }
+
+
+  .steps {
+    display: none;
+  }
+
+
+  .feature-bubble {
+    display: none;
+  }
+
+
+  .bg-circle {
+    opacity: 0.5;
+  }
+
+
+  .footer {
+    left: 20px;
+    right: 20px;
+
+    font-size: 8px;
+  }
+
+}

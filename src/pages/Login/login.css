@@ -1,0 +1,220 @@
+/* =========================
+   LOGIN PAGE
+========================= */
+
+.login-page {
+  min-height: 100vh;
+  background: #020617;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.login-navbar {
+  background: #020617;
+  border-bottom: 1px solid #1e293b;
+  padding: 16px 0;
+}
+
+.login-navbar .navbar-brand {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.login-navbar .small {
+  color: #94a3b8 !important;
+}
+
+
+/* =========================
+   LEFT SIDE
+========================= */
+
+.login-left {
+  background: linear-gradient(
+    135deg,
+    #020617,
+    #172554
+  );
+
+  display: flex;
+  align-items: center;
+}
+
+.login-left-content {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 60px;
+}
+
+.login-left h1 {
+  line-height: 1.2;
+}
+
+.vora-highlight {
+  color: #22d3ee;
+}
+
+.login-left p {
+  color: #cbd5e1;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.login-features {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.feature-item {
+  color: #e2e8f0;
+
+  font-size: 1rem;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+}
+
+.feature-item span {
+  color: #22d3ee;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+
+/* =========================
+   RIGHT SIDE
+========================= */
+
+.login-right {
+  background: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-form-container {
+  width: 100%;
+  max-width: 500px;
+  padding: 50px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.login-form-container h2 {
+  color: #0f172a;
+}
+
+.login-form-container .text-muted {
+  color: #64748b !important;
+}
+
+.form-label {
+  color: #334155;
+}
+
+.form-control {
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 12px 15px;
+}
+
+.form-control:focus {
+  border-color: #22d3ee;
+
+  box-shadow:
+    0 0 0 0.2rem
+    rgba(34, 211, 238, 0.15);
+}
+
+
+/* =========================
+   VORA BUTTON
+========================= */
+
+.btn-vora {
+  background: #0891b2;
+  color: #ffffff;
+
+  border: none;
+  border-radius: 10px;
+
+  font-weight: 600;
+  padding: 12px;
+
+  transition: 0.2s ease;
+}
+
+.btn-vora:hover {
+  background: #0e7490;
+  color: #ffffff;
+
+  transform: translateY(-1px);
+}
+
+.btn-vora:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+
+/* =========================
+   SIGNUP LINK
+========================= */
+
+.login-form-container .btn-link {
+  color: #0891b2;
+  font-weight: 600;
+}
+
+.login-form-container .btn-link:hover {
+  color: #0e7490;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 991px) {
+
+  .login-left-content {
+    padding: 50px 30px;
+  }
+
+  .login-form-container {
+    padding: 50px 30px;
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  .login-left-content {
+    padding: 40px 25px;
+  }
+
+  .login-form-container {
+    padding: 40px 25px;
+  }
+
+  .login-left h1 {
+    font-size: 2.3rem;
+  }
+
+}
