@@ -9,7 +9,7 @@ import {
 
 import Signup from "./pages/Signup/signup";
 import Login from "./pages/Login/login";
-import Welcome from "./pages/Welcome/Welcome";
+import Welcome from "./pages/Welcome/welcome";
 import Chatbot from "./pages/Chatbot/Chatbot";
 
 function AppContent() {
