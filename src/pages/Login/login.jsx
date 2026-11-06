@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./login.css";
 
-const API_BASE_URL = "http://127.0.0.1:8000";
+const API_BASE_URL = "https://vora-career-assistant-backend.onrender.com";
 
 function Login({ onSignup, onSuccess }) {
   const [email, setEmail] = useState("");

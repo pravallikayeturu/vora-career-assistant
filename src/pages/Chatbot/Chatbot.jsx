@@ -3,7 +3,7 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import "./Chatbot.css";
 
-const API_BASE_URL = "http://127.0.0.1:8000";
+const API_BASE_URL = "https://vora-career-assistant-backend.onrender.com";
 
 const ACCESS_TOKEN_KEY = "vora_access_token";
 const REFRESH_TOKEN_KEY = "vora_refresh_token";
